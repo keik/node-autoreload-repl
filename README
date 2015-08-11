@@ -1,7 +1,0 @@
-node-autoreload-repl
-====================
-
-Node REPL with auto-reload (`require`) changed files.
-
-  % npm i -g node-autoreload-repl
-  % nash
