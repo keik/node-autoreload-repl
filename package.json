@@ -1,6 +1,6 @@
 {
   "name": "node-autoreload-repl",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node REPL with watching for change on your node-package and auto-reload.",
   "bin": {
     "nash": "./bin/nash"
