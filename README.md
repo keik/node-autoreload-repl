@@ -15,4 +15,4 @@ Run
     % cd <node-package-directory>
     % nash
 
-In the REPL environment, the module are exported as `global.<package-name>'.
+In the REPL environment, the module are exported as `global.<package-name>`.

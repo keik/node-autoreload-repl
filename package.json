@@ -1,17 +1,30 @@
 {
   "name": "node-autoreload-repl",
   "version": "0.1.0",
-  "description": "",
+  "description": "Node REPL with watching for change on your node-package and auto-reload.",
   "bin": {
     "nash": "./bin/nash"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keik/node-autoreload-repl.git"
+  },
+  "keywords": [
+    "node",
+    "repl",
+    "autoreload"
+  ],
   "author": {
     "name": "keik",
     "email": "k4t0.kei@gmail.com",
     "url": "keik.info"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keik/node-autoreload-repl/issues"
+  },
+  "homepage": "https://github.com/keik/node-autoreload-repl#readme"
 }
