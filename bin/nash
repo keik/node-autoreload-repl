@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+var cwd = process.cwd();
+
+var fs = require('fs'),
+    path = require('path'),
+    package = require(path.join(cwd, './package.json')),
+    repl = require('repl');
+
+var main = require.resolve(cwd),
+    name = package.name;
+
+var caches = require.cache;
+
+global[name] = require(main);
+Object.keys(caches).forEach(function (cache) {
+  if (!cache.match(path.join(cwd, 'node_modules'))) {
+    fs.watch(cache, function () {
+      caches[main].children.forEach(function (child) {
+        delete caches[child.id];
+      });
+      delete caches[main];
+      global[name] = require(main);
+      console.info('reloaded ' + main + '\n');
+    });
+  }
+});
+
+repl.start({
+  useGlobal: true
+});

@@ -1,0 +1,17 @@
+{
+  "name": "node-autoreload-repl",
+  "version": "0.0.0",
+  "description": "",
+  "bin": {
+    "nash": "./bin/nash"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "keik",
+    "email": "k4t0.kei@gmail.com",
+    "url": "keik.info"
+  },
+  "license": "MIT"
+}
